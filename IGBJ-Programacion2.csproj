@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42F712EB-03FF-4569-AB2E-74FD44C341B1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IGBJ_Programacion2</RootNamespace>
+    <AssemblyName>IGBJ-Programacion2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=11.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.8.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categoria.cs" />
+    <Compile Include="ConexionBD.cs" />
+    <Compile Include="Doctor.cs" />
+    <Compile Include="Ecogra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecogra.Designer.cs">
+      <DependentUpon>Ecogra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ecografia1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ecografia1.Designer.cs">
+      <DependentUpon>Ecografia1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estudio.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medico.cs" />
+    <Compile Include="modificarpacient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarpacient.Designer.cs">
+      <DependentUpon>modificarpacient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarPaciente.Designer.cs">
+      <DependentUpon>modificarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paciente.cs" />
+    <Compile Include="panelcontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="panelcontrol.Designer.cs">
+      <DependentUpon>panelcontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimiento.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Programacion.cs" />
+    <Compile Include="Ecografia.cs">
+      <DependentUpon>Ecografia.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Programacion1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Programacion1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Programaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Programaciones.Designer.cs">
+      <DependentUpon>Programaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistroPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroPaciente.Designer.cs">
+      <DependentUpon>RegistroPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tipopaciente.cs" />
+    <Compile Include="Turno.cs" />
+    <Compile Include="Verprogra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Verprogra.Designer.cs">
+      <DependentUpon>Verprogra.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Ecogra.resx">
+      <DependentUpon>Ecogra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecografia1.resx">
+      <DependentUpon>Ecografia1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarpacient.resx">
+      <DependentUpon>modificarpacient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarPaciente.resx">
+      <DependentUpon>modificarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="panelcontrol.resx">
+      <DependentUpon>panelcontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ecografia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ecografia.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programacion1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Programacion1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Programaciones.resx">
+      <DependentUpon>Programaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistroPaciente.resx">
+      <DependentUpon>RegistroPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Verprogra.resx">
+      <DependentUpon>Verprogra.cs</DependentUpon>
+    </EmbeddedResource>
+    <Fakes Include="Fakes\MySql.Data.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fond.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thefreeforty_register_icon-icons.com_66338.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icono_registro.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_53082841-stock-illustration-clinical-record-flat-icon-with.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\35165162-Medical-report-modern-flat-icon-Stock-Vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\depositphotos_89064754-stock-illustration-clinical-record-flat-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\índice.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports_98403.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
